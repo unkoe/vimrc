@@ -2,7 +2,7 @@
 
 # The Ultimate vimrc
 
-声明：这是个人的vim配置，它仅符合我的使用习惯，如果你想要定制 `VIM配置`，请跟踪[它](!https://github.com/amix/vimrc)。
+声明：这是个人的vim配置，它仅符合我的使用习惯，如果你想要定制 `VIM配置`，请跟踪[它](https://github.com/amix/vimrc)。
 
 Over the last 10 years, I have used and tweaked Vim. This configuration is the ultimate vimrc (or at least my version of it).
 
