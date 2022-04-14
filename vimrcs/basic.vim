@@ -61,7 +61,7 @@ set so=7
 
 " Avoid garbled characters in Chinese language windows OS
 language messages zh_CN.utf-8
-let $LANG=zh_CN.utf-8
+let $LANG="zh"
 set langmenu=zh_CN.utf-8
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
