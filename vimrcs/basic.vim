@@ -60,10 +60,15 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 set so=7
 
 " Avoid garbled characters in Chinese language windows OS
-let $LANG='en'
-set langmenu=en
+language messages zh_CN.utf-8
+let $LANG=zh_CN.utf-8
+set langmenu=zh_CN.utf-8
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
+
+" 帮助语言
+set helplang=cn
+set iskeyword+=
 
 " Turn on the Wild menu
 set wildmenu
@@ -156,7 +161,12 @@ endif
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
-
+set fileencodings=utf-8,chinese,latin-1
+if has("win32")
+set fileencoding=chinese
+else
+set fileencoding=utf-8
+endif
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
@@ -180,7 +190,7 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
+set shiftwidth=2
 set tabstop=4
 
 " Linebreak on 500 characters
