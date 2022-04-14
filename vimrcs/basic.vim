@@ -160,13 +160,8 @@ if has("gui_running")
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
-set fileencodings=utf-8,chinese,latin-1
-if has("win32")
-set fileencoding=chinese
-else
-set fileencoding=utf-8
-endif
+set encoding=utf-8
+set fileencodings=utf-8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
